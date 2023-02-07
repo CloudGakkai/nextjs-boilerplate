@@ -4,7 +4,7 @@ exports[`BaseButton should render the button with the label and snapshot 1`] = `
 <div>
   <div>
     <button
-      class="bg-primary text-white font-regular rounded-lg px-5 py-3 hover:opacity-80 disabled:opacity-50"
+      class="bg-blue-500 text-white font-regular rounded-lg px-5 py-3 hover:opacity-80 disabled:opacity-50"
     >
       Primary
     </button>
