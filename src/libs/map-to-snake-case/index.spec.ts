@@ -22,7 +22,7 @@ describe("mapToSnakeCase", () => {
         anotherCamelCase: {
           anotherCamelCase: "value",
         },
-      })
+      }),
     ).toEqual({
       camel_case: "value",
       another_camel_case: {

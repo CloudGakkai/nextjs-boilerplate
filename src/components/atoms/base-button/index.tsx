@@ -1,5 +1,8 @@
-import { ComponentPropsWithoutRef, useMemo } from "react";
+import { useMemo } from "react";
+
 import { clsx } from "~/libs";
+
+import type { ComponentPropsWithoutRef } from "react";
 
 interface BaseButtonProps extends ComponentPropsWithoutRef<"button"> {
   label: string;
@@ -37,7 +40,7 @@ export const BaseButton = (props: BaseButtonProps) => {
         className={clsx(
           btnStyle,
           "font-regular rounded-lg px-5 py-3 hover:opacity-80 disabled:opacity-50",
-          restProps.className
+          restProps.className,
         )}
         disabled={loading || restProps.disabled}
       >

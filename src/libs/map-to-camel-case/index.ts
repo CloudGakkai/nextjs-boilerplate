@@ -3,7 +3,7 @@ import { camelCase, isArray, isObject, transform } from "lodash-es";
 export type CamelizeInput = object;
 
 export const mapToCamelCase = <T = Record<string, unknown>>(
-  obj: CamelizeInput
+  obj: CamelizeInput,
 ): T =>
   transform(obj, (acc: Record<string, object>, value, key, target) => {
     const camelKey = isArray(target) ? key : camelCase(key);

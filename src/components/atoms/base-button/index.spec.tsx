@@ -32,7 +32,7 @@ describe("BaseButton", () => {
   // Snapshot
   it("should render the button with the label and snapshot", () => {
     const { container } = render(
-      <BaseButton label="Primary" variant="primary" />
+      <BaseButton label="Primary" variant="primary" />,
     );
     expect(container).toMatchSnapshot();
   });
