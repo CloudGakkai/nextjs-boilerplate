@@ -5,8 +5,6 @@ interface BaseButtonProps extends ComponentPropsWithoutRef<"button"> {
   label: string;
   containerClassName?: string;
   loading?: boolean;
-  backgroundColor?: string;
-  textColor?: string;
   variant?: "primary" | "secondary" | "tertiary";
 }
 
@@ -22,13 +20,13 @@ export const BaseButton = (props: BaseButtonProps) => {
   const btnStyle = useMemo(() => {
     switch (btnType) {
       case "primary":
-        return "bg-primary text-white";
+        return "bg-blue-500 text-white";
       case "secondary":
         return "bg-white text-gray-600";
       case "tertiary":
         return "bg-red-500 text-white";
       default:
-        return "bg-primary text-white";
+        return "bg-blue-500 text-white";
     }
   }, [btnType]);
 
