@@ -5,5 +5,3 @@ export type ClassNamesOutput = string;
 export const clsx = (...classes: ClassNamesInput): ClassNamesOutput => {
   return classes.filter(Boolean).join(" ");
 };
-
-export default clsx;

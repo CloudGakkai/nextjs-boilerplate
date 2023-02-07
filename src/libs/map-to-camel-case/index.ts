@@ -10,5 +10,3 @@ export const mapToCamelCase = <T = Record<string, unknown>>(
 
     acc[camelKey] = isObject(value) ? mapToCamelCase(value) : value;
   }) as unknown as T;
-
-export default mapToCamelCase;

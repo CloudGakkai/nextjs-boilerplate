@@ -12,5 +12,3 @@ export const mapToSnakeCase = (
 
     acc[snakeKey] = isObject(value) ? mapToSnakeCase(value) : value;
   });
-
-export default mapToSnakeCase;

@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "type:check": "tsc -p tsconfig.json --jsx react-jsx --noEmit",
+    "test": "jest --watch",
+    "test:ci": "jest --ci"
   },
   "dependencies": {
     "@next/font": "13.1.6",
@@ -26,8 +29,14 @@
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/line-clamp": "^0.4.2",
     "@tailwindcss/typography": "^0.5.9",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
     "@types/lodash-es": "^4.17.6",
+    "@types/testing-library__jest-dom": "^5.14.5",
     "autoprefixer": "^10.4.13",
+    "jest": "^29.4.1",
+    "jest-environment-jsdom": "^29.4.1",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.4"
   }
