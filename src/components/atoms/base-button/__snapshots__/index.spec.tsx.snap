@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BaseButton should render the button with the label and snapshot 1`] = `
+<div>
+  <div>
+    <button
+      class="bg-primary text-white font-regular rounded-lg px-5 py-3 hover:opacity-80 disabled:opacity-50"
+    >
+      Primary
+    </button>
+  </div>
+</div>
+`;

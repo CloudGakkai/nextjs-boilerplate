@@ -11,8 +11,7 @@ const customJestConfig = {
   moduleDirectories: ["node_modules"],
   moduleNameMapper: {
     "^lodash-es$": "lodash",
-    "^~/libs/(.*)$": "<rootDir>/src/libs/$1",
-    "^~/pages/(.*)$": "<rootDir>/src/pages/$1",
+    "^~/(.*)$": "<rootDir>/src/$1",
   },
   testEnvironment: "jest-environment-jsdom",
 };
