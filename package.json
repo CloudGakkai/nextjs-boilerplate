@@ -11,7 +11,7 @@
     "lint:cache": "next lint --cache",
     "type:check": "tsc -p tsconfig.json --jsx react-jsx --noEmit",
     "test": "jest --watch",
-    "test:ci": "jest --ci",
+    "test:ci": "jest --ci --coverage",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "commit": "cz"

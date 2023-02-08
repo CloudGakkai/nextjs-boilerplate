@@ -28,8 +28,6 @@ export const BaseButton = (props: BaseButtonProps) => {
         return "bg-white text-gray-600";
       case "tertiary":
         return "bg-red-500 text-white";
-      default:
-        return "bg-blue-500 text-white";
     }
   }, [btnType]);
 

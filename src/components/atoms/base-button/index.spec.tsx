@@ -28,12 +28,32 @@ describe("BaseButton", () => {
     await userEvent.click(screen.getByText("Primary"));
     expect(onClick).toHaveBeenCalledTimes(1);
   });
+});
 
-  // Snapshot
+describe("BaseButton Snapshots", () => {
   it("should render the button with the label and snapshot", () => {
     const { container } = render(
       <BaseButton label="Primary" variant="primary" />,
     );
+    expect(container).toMatchSnapshot();
+  });
+
+  it("should render the button with the label and snapshot", () => {
+    const { container } = render(
+      <BaseButton label="Secondary" variant="secondary" />,
+    );
+    expect(container).toMatchSnapshot();
+  });
+
+  it("should render the button with the label and snapshot", () => {
+    const { container } = render(
+      <BaseButton label="Tertiary" variant="tertiary" />,
+    );
+    expect(container).toMatchSnapshot();
+  });
+
+  it("should render the button with the label and snapshot", () => {
+    const { container } = render(<BaseButton label="Primary" />);
     expect(container).toMatchSnapshot();
   });
 });

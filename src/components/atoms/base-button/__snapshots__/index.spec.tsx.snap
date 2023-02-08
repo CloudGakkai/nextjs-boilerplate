@@ -1,6 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`BaseButton should render the button with the label and snapshot 1`] = `
+exports[`BaseButton Snapshots should render the button with the label and snapshot 1`] = `
+<div>
+  <div>
+    <button
+      class="bg-blue-500 text-white font-regular rounded-lg px-5 py-3 hover:opacity-80 disabled:opacity-50"
+    >
+      Primary
+    </button>
+  </div>
+</div>
+`;
+
+exports[`BaseButton Snapshots should render the button with the label and snapshot 2`] = `
+<div>
+  <div>
+    <button
+      class="bg-white text-gray-600 font-regular rounded-lg px-5 py-3 hover:opacity-80 disabled:opacity-50"
+    >
+      Secondary
+    </button>
+  </div>
+</div>
+`;
+
+exports[`BaseButton Snapshots should render the button with the label and snapshot 3`] = `
+<div>
+  <div>
+    <button
+      class="bg-red-500 text-white font-regular rounded-lg px-5 py-3 hover:opacity-80 disabled:opacity-50"
+    >
+      Tertiary
+    </button>
+  </div>
+</div>
+`;
+
+exports[`BaseButton Snapshots should render the button with the label and snapshot 4`] = `
 <div>
   <div>
     <button
