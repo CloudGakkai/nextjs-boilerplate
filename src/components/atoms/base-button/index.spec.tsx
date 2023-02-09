@@ -20,9 +20,16 @@ describe("BaseButton", () => {
   });
 
   it("should render the button with the label and loading", () => {
-    render(<BaseButton label="Primary" variant="primary" loading />);
-    expect(screen.getByText("Primary")).toBeInTheDocument();
-    expect(screen.getByText("Primary")).toBeDisabled();
+    render(
+      <BaseButton
+        testId="loading-test-id"
+        label="Primary"
+        variant="primary"
+        loading
+      />,
+    );
+    expect(screen.getByTestId("loading-test-id")).toBeInTheDocument();
+    expect(screen.getByTestId("loading-test-id")).toBeDisabled();
   });
 
   it("should render the button with the label and click", async () => {

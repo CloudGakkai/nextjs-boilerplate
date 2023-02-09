@@ -11,6 +11,7 @@ interface BaseButtonProps extends ComponentPropsWithoutRef<"button"> {
   containerClassName?: string;
   loading?: boolean;
   variant?: "primary" | "secondary" | "tertiary";
+  testId?: string;
 }
 
 export const BaseButton = (props: BaseButtonProps) => {
@@ -19,6 +20,7 @@ export const BaseButton = (props: BaseButtonProps) => {
     containerClassName,
     loading,
     variant: btnType = "primary",
+    testId,
     ...restProps
   } = props;
 
@@ -48,6 +50,7 @@ export const BaseButton = (props: BaseButtonProps) => {
     <div className={containerClassName}>
       <button
         {...restProps}
+        data-testid={testId}
         className={clsx(
           btnStyle,
           "font-regular rounded-lg px-5 py-3 hover:opacity-80 disabled:opacity-50",
