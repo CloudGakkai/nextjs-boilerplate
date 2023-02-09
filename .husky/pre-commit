@@ -3,4 +3,4 @@
 
 yarn type:check
 yarn lint:cache
-yarn test:ci
+yarn test:ci --coverage

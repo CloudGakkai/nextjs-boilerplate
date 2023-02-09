@@ -11,10 +11,11 @@
     "lint:cache": "next lint --cache",
     "type:check": "tsc -p tsconfig.json --jsx react-jsx --noEmit",
     "test": "jest --watch",
-    "test:ci": "jest --ci --coverage",
+    "test:ci": "jest --ci",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "commit": "cz"
+    "commit": "cz",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@next/font": "13.1.6",
