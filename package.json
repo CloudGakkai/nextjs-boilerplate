@@ -63,11 +63,13 @@
     "husky": "^8.0.3",
     "jest": "^29.4.1",
     "jest-environment-jsdom": "^29.4.1",
+    "jest-transform-stub": "^2.0.0",
     "postcss": "^8.4.21",
     "prettier": "^2.8.3",
     "prettier-plugin-tailwindcss": "^0.2.2",
     "sb": "^6.5.16",
-    "tailwindcss": "^3.2.4"
+    "tailwindcss": "^3.2.4",
+    "ts-jest": "^29.0.5"
   },
   "resolutions": {
     "webpack": "^5"

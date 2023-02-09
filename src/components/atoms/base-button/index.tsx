@@ -2,6 +2,8 @@ import { useMemo } from "react";
 
 import { clsx } from "~/libs";
 
+import { LoadingAnimation } from "~/assets/svg";
+
 import type { ComponentPropsWithoutRef } from "react";
 
 interface BaseButtonProps extends ComponentPropsWithoutRef<"button"> {
@@ -31,6 +33,17 @@ export const BaseButton = (props: BaseButtonProps) => {
     }
   }, [btnType]);
 
+  const loadingStyle = useMemo(() => {
+    switch (btnType) {
+      case "primary":
+        return "text-white fill-white";
+      case "secondary":
+        return "text-gray-600 fill-gray-600";
+      case "tertiary":
+        return "text-white fill-white";
+    }
+  }, [btnType]);
+
   return (
     <div className={containerClassName}>
       <button
@@ -42,7 +55,16 @@ export const BaseButton = (props: BaseButtonProps) => {
         )}
         disabled={loading || restProps.disabled}
       >
-        {loading ? "Loading..." : label}
+        {loading ? (
+          <LoadingAnimation
+            className={clsx(
+              "inline w-5 h-5 text-opacity-40 animate-spin",
+              loadingStyle,
+            )}
+          />
+        ) : (
+          label
+        )}
       </button>
     </div>
   );

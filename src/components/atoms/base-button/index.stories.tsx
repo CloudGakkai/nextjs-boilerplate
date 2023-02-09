@@ -9,7 +9,9 @@ export default {
 } as ComponentMeta<typeof BaseButton>;
 
 const Template: ComponentStory<typeof BaseButton> = (args) => (
-  <BaseButton {...args} />
+  <div className="w-48">
+    <BaseButton {...args} className="w-full" />
+  </div>
 );
 
 export const Primary = Template.bind({});

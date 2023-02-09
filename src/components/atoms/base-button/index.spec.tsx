@@ -1,4 +1,7 @@
 import { render, screen } from "@testing-library/react";
+
+import "@testing-library/jest-dom/extend-expect";
+
 import userEvent from "@testing-library/user-event";
 
 import { BaseButton } from ".";
@@ -18,8 +21,8 @@ describe("BaseButton", () => {
 
   it("should render the button with the label and loading", () => {
     render(<BaseButton label="Primary" variant="primary" loading />);
-    expect(screen.getByText("Loading...")).toBeInTheDocument();
-    expect(screen.getByText("Loading...")).toBeDisabled();
+    expect(screen.getByText("Primary")).toBeInTheDocument();
+    expect(screen.getByText("Primary")).toBeDisabled();
   });
 
   it("should render the button with the label and click", async () => {
