@@ -88,7 +88,7 @@ Open [http://localhost:6006](http://localhost:6006) with your browser to see the
 
 This template uses [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) to make sure your commit messages are consistent and readable.
 
-Before commiting your changes, install husky using this command:
+Before commiting your changes, install husky using this command: _(Optional - since already installed when running `yarn install`)_
 
 ```bash
 yarn prepare
@@ -101,3 +101,49 @@ yarn commit
 ```
 
 This command will open an interactive CLI to help you write your commit message.
+
+### **6. Run the test**
+
+For testing documentation, please visit [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/).
+
+You can start the test using this command:
+
+For watch mode:
+
+```bash
+yarn test
+```
+
+with coverage:
+
+```bash
+yarn test --coverage
+```
+
+For single run:
+
+```bash
+yarn test:ci
+```
+
+with coverage:
+
+```bash
+yarn test:ci --coverage
+```
+
+### **7. Build your app**
+
+You can build your app using this command:
+
+```bash
+yarn build
+```
+
+### **8. Run your app**
+
+You can run your app using this command:
+
+```bash
+yarn start
+```
