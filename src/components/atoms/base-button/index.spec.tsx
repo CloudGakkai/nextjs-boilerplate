@@ -9,13 +9,13 @@ import { BaseButton } from ".";
 describe("BaseButton", () => {
   it("should render the button with the label", () => {
     render(<BaseButton label="Primary" variant="primary" />);
-    expect(screen.getByText("Primary")).toBeInTheDocument();
+    expect(screen.getByText("Primary")).toBeVisible();
     expect(screen.getByText("Primary")).not.toBeDisabled();
   });
 
   it("should render the button with the label and disabled", () => {
     render(<BaseButton label="Primary" variant="primary" disabled />);
-    expect(screen.getByText("Primary")).toBeInTheDocument();
+    expect(screen.getByText("Primary")).toBeVisible();
     expect(screen.getByText("Primary")).toBeDisabled();
   });
 
@@ -28,7 +28,7 @@ describe("BaseButton", () => {
         loading
       />,
     );
-    expect(screen.getByTestId("loading-test-id")).toBeInTheDocument();
+    expect(screen.getByTestId("loading-test-id")).toBeVisible();
     expect(screen.getByTestId("loading-test-id")).toBeDisabled();
   });
 
