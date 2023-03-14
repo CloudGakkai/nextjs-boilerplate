@@ -1,6 +1,5 @@
 import { render } from "@testing-library/react";
-
-import Index from "../pages";
+import Index from "~/pages";
 
 describe("Index", () => {
   it("renders successfully", () => {

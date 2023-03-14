@@ -20,6 +20,7 @@ module.exports = {
     "^(react|next|next/(.*))$",
     "<THIRD_PARTY_MODULES>",
     "^~/(hooks|libs|constants)/(.*)$",
+    "^~/(services|utils)/(.*)$",
     "^~/(validations)/(.*)$",
     "^~/(components|layouts)/(.*)$",
     "^[./]",

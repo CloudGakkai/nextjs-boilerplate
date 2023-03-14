@@ -23,6 +23,7 @@ const customJestConfig = {
   coveragePathIgnorePatterns: [
     "<rootDir>/node_modules/",
     "<rootDir>/src/assets/",
+    "<rootDir>/src/constants/",
   ],
 };
 

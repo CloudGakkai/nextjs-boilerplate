@@ -20,9 +20,9 @@
 - 💖 Prettier — Format your code consistently
 - 🐶 Husky — Run scripts on your staged files before they are committed
 - 🤖 Conventional Commit Lint — Make sure you & your teammates follow conventional commit
+- 🌸 React Query
 - 🔜 _Another cool features will be added soon..._
   - 📋 React Hook Form
-  - 🌸 React Query
   - ✅ Yup
   - 🌐 Jotai/Zustand (?)
 
