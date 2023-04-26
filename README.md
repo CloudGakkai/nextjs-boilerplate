@@ -1,9 +1,9 @@
 # **Next.js Starter-Kit Boilerplate**
 
 [![ts](https://badgen.net/badge/-/TypeScript/blue?icon=typescript&label)](https://www.typescriptlang.org)
-[![GitHub Repo stars](https://img.shields.io/github/stars/rizbud/next-boilerplate)](https://github.com/rizbud/next-boilerplate/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/rizbud/next-boilerplate)](https://github.com/rizbud/next-boilerplate/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/rizbud/next-boilerplate)](https://github.com/rizbud/next-boilerplate/issues)
+[![GitHub Repo stars](https://img.shields.io/github/stars/CloudGakkai/nextjs-boilerplate)](https://github.com/CloudGakkai/nextjs-boilerplate/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/CloudGakkai/nextjs-boilerplate)](https://github.com/CloudGakkai/nextjs-boilerplate/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/CloudGakkai/nextjs-boilerplate)](https://github.com/CloudGakkai/nextjs-boilerplate/issues)
 
 ## **Features**
 
@@ -41,18 +41,18 @@
 2. Using `create-next-app`
 
    ```bash
-   npx create-next-app -e https://github.com/rizbud/next-boilerplate project-name
+   npx create-next-app -e https://github.com/CloudGakkai/nextjs-boilerplate project-name
    ```
 
 3. Using `degit`
 
    ```bash
-   npx degit rizbud/next-boilerplate YOUR_APP_NAME
+   npx degit CloudGakkai/nextjs-boilerplate YOUR_APP_NAME
    ```
 
 4. Deploy it directly to Vercel
 
-   [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Frizbud%2Fnext-boilerplate)
+   [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2FCloudGakkai%2Fnextjs-boilerplate)
 
 ### **2. Install dependencies**
 
