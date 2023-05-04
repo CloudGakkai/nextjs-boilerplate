@@ -27,4 +27,4 @@
   - 🌐 Jotai/Zustand (?)
 
 ## Boilerplate Docs
-Check our boilerplate documentation => ![Notion Docs](https://cloudgakkai.notion.site/NextJS-Boilerplate-by-CloudGakkai-4d612c373cba46789956aa2c0ee0891b)
+Check our boilerplate documentation => [Notion Docs](https://cloudgakkai.notion.site/NextJS-Boilerplate-by-CloudGakkai-4d612c373cba46789956aa2c0ee0891b)
